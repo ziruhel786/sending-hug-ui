@@ -18,3 +18,17 @@ $('.slider').slick({
     centerMode: true,
     variableWidth: true
 });
+// side nav open
+$(document).on("click", '.thumbs > img', function () {
+    $(this).parents('.product').find('.largeImage > img').attr('src', $(this).attr('src').replace('thumb', 'large'));
+    $(this).addClass("active").siblings().removeClass("active");
+});
+var sourceSwap = function () {
+    var $this = $(this);
+    var newSource = $this.data('hover');
+    $this.data('hover', $this.attr('src'));
+    $this.attr('src', newSource);
+};
+$(function () {
+    $('.largeImage > img').hover(sourceSwap, sourceSwap);
+});

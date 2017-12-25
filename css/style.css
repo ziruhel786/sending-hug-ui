@@ -444,6 +444,8 @@ header {
 
 .mega-menu .links > li {
     margin-bottom: 10px;
+    display: inline-block;
+    width: 100%;
 }
 
 .mega-menu .links > li > a {
@@ -568,12 +570,13 @@ header {
     padding-right: 20px;
     color: #fff;
 }
-.banner.top{
+section.top{
     margin-top: 140px;
     padding-top: 15px;
 }
 .banner figure > img,
-.slider img{
+.slider img,
+.product figure > img{
     -o-object-fit: fill;
     object-fit: fill;
     height: auto;
@@ -747,4 +750,43 @@ footer h5{
     margin-top: 3.5em;
     padding-top: 1em;
     border-top: 1px solid #ededed;
+}
+.product > a{
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #4d4d4d;
+}
+.product .name{
+    display: block;
+    margin-top: .5em;
+}
+.thumbs{
+    padding: .5em 0;
+    overflow: hidden;
+}
+.thumbs .thumb{
+    border: 2px solid transparent;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    padding: 2px;
+    margin-right: 4px;
+}
+.thumbs .thumb.active{
+    border-color: #bdbdbd;
+}
+.sh-breadcrumb {
+    margin-bottom: 0;
+    background-color: transparent;
+    margin-top: -20px;
+}
+.sh-breadcrumb li a{
+    color: #4d4d4d;
+    font-size: 12px;
+    font-weight: 400;
+}
+.sh-breadcrumb li:last-child a {
+    pointer-events: none;
+    cursor: default;
+    font-weight: 600;
 }
