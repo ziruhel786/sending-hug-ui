@@ -14,8 +14,9 @@
 }
 
 body {
-    color: #000;
+    color: #4d4d4d;
     font-family: 'Nunito', sans-serif;
+    font-family: 'Lato', sans-serif;
     overflow-x: hidden;
     font-size: 13px;
     font-weight: 600;
@@ -287,38 +288,47 @@ header {
 }
 
 .top-header {
-    background: #f6f6f6;
+    background-color: #B3E4D6;
     font-size: 12px;
-    line-height: 30px;
+    text-transform: uppercase;
 }
-
+.logo{
+    position: relative;
+}
 .logo > img {
-    height: 60px;
+    height: 100px;
+    position: absolute;
 }
 
 .top-nav {
-    padding: 12px 0;
+    padding: 10px 0;
 }
 
 .top-nav li,
 .social-nav li{
     display: inline-block;
 }
-
-.top-nav li a {
-    font-size: 10px;
+.top-nav > ul > li {
+    line-height: 1;
+    border-right: 1px solid #0d0d0d;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.top-nav > ul >li:last-child {
+    border-right: none;
 }
 
-.top-nav li a,
-.navbar-nav li a,
-.social-nav li a{
+.top-nav li a i,
+.top-nav li a img{
+    vertical-align: inherit;
+}
+.top-nav li a{
     color: #000;
 }
-
-.top-nav li a i {
-    font-size: 1.7em !important;
-    padding-right: 5px;
-    vertical-align: bottom;
+.navbar-nav li a,
+.social-nav li a,
+.footer-nav li a{
+    color: #4d4d4d;
 }
 
 .top-nav li a:hover,
@@ -327,19 +337,23 @@ header {
 .navbar-nav .open > a:hover,
 .navbar-nav .open > a:focus,
 .social-nav li a:hover,
-.social-nav li a:focus{
+.social-nav li a:focus,
+.footer-nav li a:hover,
+.footer-nav li a:focus{
     background-color: transparent;
 }
 
-.navbar-nav li a {
+.navbar-nav li a,
+.footer-nav li a{
     font-size: 12px;
 }
 
 /* dropdown menu animation */
 .navbar-nav li {
     position: static;
+    display: inline-block;
+    float: unset;
 }
-
 .navbar-nav .dropdown-menu {
     border: none;
     border-radius: 0 !important;
@@ -347,7 +361,6 @@ header {
     left: 0;
     right: 0;
     box-shadow: none;
-    background-color: rgba(255, 255, 255, .5);
 }
 
 .navbar-nav > li.open > a:before {
@@ -395,9 +408,8 @@ header {
     transition-timing-function: ease-in;
     max-height: 1000px;
     overflow: hidden;
-
+    border-bottom: 1px solid #ededed;
 }
-
 .open .dropdown-menu, .dropdown-menu {
     display: unset;
 }
@@ -490,20 +502,24 @@ header {
 /********* **************/
 .search {
     position: relative !important;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 .search > input {
     border-radius: 0;
-    border: none;
     height: 30px;
     min-width: 293px;
-    padding-left: 0;
+    border-color: #ededed;
+    box-shadow: none;
+}
+.search.sing-up > input{
+    height: 43px;
 }
 
-.search > input:focus,
-.search > input {
+.search > input:focus{
     box-shadow: none;
-    border-bottom: 1px solid #000;
+    border-color: #B3E4D6;
 }
 
 .search > .form-control::-webkit-input-placeholder {
@@ -532,10 +548,21 @@ header {
     top: 0;
     border: none;
     height: 30px;
-    width: 40px;
+    width: 30px;
+    line-height: 30px;
     background-color: transparent;
     font-size: 1.5em;
-    text-align: right;
+}
+.search.sing-up > button{
+    height: 42px;
+}
+.sing-up > .btn-sh{
+    background-color: #B3E4D6;
+    width: unset;
+    min-width: unset;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .banner.top{
     margin-top: 140px;
@@ -599,7 +626,7 @@ header {
     font-weight: 300;
 }
 .btn-sh{
-    border: 2px solid #000;
+    border: 2px solid #B3E4D6;
     text-transform: uppercase;
     font-size: 12px;
     border-radius: 0;
@@ -610,8 +637,8 @@ header {
     min-width: 200px;
 }
 .btn-sh:hover,.btn-sh:focus{
-    background-color: #000;
-    color: #fff;
+    background-color: #B3E4D6;
+    color: #000;
 }
 .ptb3em{
     padding-top: 3.5em;
@@ -637,7 +664,7 @@ position: relative;
     z-index: 2;
 }
 .quote{
-    background-color: #A6B5B8;
+    background-color: #B3E4D6;
     text-align: center;
     padding: 30px 0;
     margin-top: 45px;
@@ -661,7 +688,7 @@ position: relative;
     padding: 15px;
 }
 .slider .col h6{
-    color: #000000;
+    color: #4d4d4d;
     font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
     font-size: 15px;
     line-height: 1.5em;
@@ -674,7 +701,7 @@ position: relative;
 padding-top: 30px;
 }
 .round{
-    background-color: #000;
+    background-color: #4d4d4d;
     color: #fff;
     border-radius: 50%;
     display: inline-block;
@@ -689,4 +716,31 @@ padding-top: 30px;
 }
 .social-nav li a{
     font-size: 20px;
+}
+footer h5{
+    font-weight: 700;
+    margin-top: 25px;
+    letter-spacing: .05em;
+}
+.footer-nav li a{
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: .05em;
+    font-size: 13px;
+}
+.footer-nav li a:hover{
+    color: #000;
+}
+.copyright{
+    background-color: #B3E4D6;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+.footer{
+    margin-top: 3.5em;
+    padding-top: 1em;
+    padding-bottom: 3.5em;
+    border-top: 1px solid #ededed;
 }
