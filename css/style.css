@@ -765,15 +765,16 @@ footer h5{
     overflow: hidden;
 }
 .thumbs .thumb{
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     height: 35px;
     width: 35px;
     border-radius: 50%;
     padding: 2px;
     margin-right: 4px;
+    cursor: pointer;
 }
 .thumbs .thumb.active{
-    border-color: #bdbdbd;
+    border-color: #CAAC57;
 }
 .sh-breadcrumb {
     margin-bottom: 0;
