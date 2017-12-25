@@ -285,10 +285,11 @@ header {
     width: 100%;
     background-color: #fff;
     z-index: 999;
+    border-bottom: 1px solid #ededed;
 }
 
 .top-header {
-    background-color: #B3E4D6;
+    background-color: #f5f5f5;
     font-size: 12px;
     text-transform: uppercase;
 }
@@ -381,6 +382,7 @@ header {
 }
 
 .dropdown-menu {
+    border-bottom: 1px solid #ededed;
     overflow: hidden;
     max-height: 0;
     padding-top: 0;
@@ -515,31 +517,32 @@ header {
 }
 .search.sing-up > input{
     height: 43px;
+    border-color: #CAAC57;
 }
 
 .search > input:focus{
     box-shadow: none;
-    border-color: #B3E4D6;
+    border-color: #CAAC57;
 }
 
 .search > .form-control::-webkit-input-placeholder {
-    color: black;
+    color: gray;
     font-weight: 400;
 }
 .search > .form-control:-moz-placeholder {
-    color: black;
+    color: gray;
     font-weight: 400;
 }
 .search > .form-control::-moz-placeholder {
-    color: black;
+    color: gray;
     font-weight: 400;
 }
 .search > .form-control:-ms-input-placeholder {
-    color: black;
+    color: gray;
     font-weight: 400;
 }
 .search > .form-control:-ms-input-placeholder {
-    color: black;
+    color: gray;
     font-weight: 400;
 }
 .search > button {
@@ -557,12 +560,13 @@ header {
     height: 42px;
 }
 .sing-up > .btn-sh{
-    background-color: #B3E4D6;
+    background-color: #CAAC57;
     width: unset;
     min-width: unset;
     font-size: 14px;
     padding-left: 20px;
     padding-right: 20px;
+    color: #fff;
 }
 .banner.top{
     margin-top: 140px;
@@ -626,7 +630,7 @@ header {
     font-weight: 300;
 }
 .btn-sh{
-    border: 2px solid #B3E4D6;
+    border: 2px solid #CAAC57;
     text-transform: uppercase;
     font-size: 12px;
     border-radius: 0;
@@ -637,8 +641,8 @@ header {
     min-width: 200px;
 }
 .btn-sh:hover,.btn-sh:focus{
-    background-color: #B3E4D6;
-    color: #000;
+    background-color: #CAAC57;
+    color: #fff;
 }
 .ptb3em{
     padding-top: 3.5em;
@@ -664,7 +668,7 @@ position: relative;
     z-index: 2;
 }
 .quote{
-    background-color: #B3E4D6;
+    background-color: #f5f5f5;
     text-align: center;
     padding: 30px 0;
     margin-top: 45px;
@@ -732,15 +736,15 @@ footer h5{
     color: #000;
 }
 .copyright{
-    background-color: #B3E4D6;
+    background-color: #f5f5f5;
     font-size: 12px;
     text-align: center;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
+    margin-top: 3.5em;
 }
 .footer{
     margin-top: 3.5em;
     padding-top: 1em;
-    padding-bottom: 3.5em;
     border-top: 1px solid #ededed;
 }
