@@ -11,6 +11,10 @@ $(document).on('mouseout', '.hover-nav .dropdown', function () {
         $(this).removeClass('open')
     }
 );
+$(document).on('click', '.navbar-nav.filter-nav .dropdown > a', function () {
+        $(this).parent().toggleClass('open').siblings().removeClass('open');
+    }
+);
 $('.slider').slick({
     infinite: true,
     speed: 300,
@@ -31,4 +35,11 @@ var sourceSwap = function () {
 };
 $(function () {
     $('.largeImage > img').hover(sourceSwap, sourceSwap);
+});
+
+// select form options list
+$(".select-list li a").on("click", function () {
+    var v = $(this).text();
+    $(this).parent().addClass("selected").siblings().removeClass("selected");
+    $(this).parents('.selected-option').find(".filter-option").text(v);
 });
