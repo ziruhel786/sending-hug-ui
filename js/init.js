@@ -3,11 +3,11 @@ $("[data-url]").each(function () {
     var x = $(this).attr('data-url');
     $(this).load(x).removeAttr("data-url");
 });
-$(document).on('mouseover', '.dropdown', function () {
+$(document).on('mouseover', '.hover-nav .dropdown', function () {
         $(this).addClass('open')
     }
 );
-$(document).on('mouseout', '.dropdown', function () {
+$(document).on('mouseout', '.hover-nav .dropdown', function () {
         $(this).removeClass('open')
     }
 );
