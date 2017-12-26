@@ -20,7 +20,26 @@
 </head>
 <body>
 <header class="fade-in one" data-url="header.html"></header>
-<section class="banner top fade-in one">
+<section id="carousel-example-generic" class="carousel slide top fade-in one" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox" style="background-image:url('images/s1.jpg');">
+        <div class="item active" style="background-image:url('images/s1.jpg');">
+        </div>
+        <div class="item" style="background-image:url('images/s2.jpg');">
+        </div>
+        <div class="item" style="background-image:url('images/s3.jpg');">
+        </div>
+    </div>
+</section>
+
+<section class="banner mt45 fade-in one">
     <div class="container">
         <div class="row flex-row">
             <div class="col-8">
