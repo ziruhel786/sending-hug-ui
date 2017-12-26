@@ -823,6 +823,9 @@ footer h5{
     background-color: rgba(0, 0, 0, 0.9);
     margin: 0 6px;
 }
+.carousel-indicators {
+    bottom: -40px;
+}
 /* end */
 .filter-nav > li > a{
     text-transform: uppercase;
