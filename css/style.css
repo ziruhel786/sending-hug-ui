@@ -865,6 +865,7 @@ footer h5{
     font-size: 13px;
     letter-spacing: 0;
     text-transform: capitalize;
+    padding: 10px 30px;
 }
 .filter-nav > li.open > a:before{
     display: none;
@@ -978,4 +979,106 @@ footer h5{
 .selected-option .select-list > li.selected > a{
     background-color: #CAAC57;
     color: #fff;
+}
+.xzoom-source img, .xzoom-preview img, .xzoom-lens img {
+    display: block;
+    max-width: none;
+    max-height: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+.xzoom-container{
+    width: 100%;
+}
+.xzoom{
+    width: calc(100% - 120px) !important;
+    float: right;
+}
+.xzoom-thumbs{
+    width: 120px;
+    padding-right: 15px;
+}
+.xzoom-thumbs a img,
+.xzoom-thumbs a{
+    width: 100% !important;
+    opacity: 0.5;
+}
+.xzoom, .xzoom-gallery, .xzoom-gallery2, .xzoom-gallery3, .xzoom-gallery4, .xzoom-gallery5 {
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+.xzoom-thumbs a,
+.xzoom-thumbs a img.xactive{
+    opacity: 1;
+}
+.sp-quantity-box {
+    border: 1px solid #ededed;
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 45px;
+    min-width: 145px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+.sp-minus, .sp-plus, .sp-input {
+    float: left;
+    text-align: center;
+    font-size: 24px;
+    height: 36px;
+    width: 36px;
+    font-weight: 300;
+}
+
+.sp-input input {
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    width: 60px;
+    text-align: center;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.sp-input {
+    background-color: transparent;
+    width: 60px;
+    line-height: 30px;
+}
+.sp-minus a, .sp-plus a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #4e4d5b;
+}
+.btn-atc{
+    min-height: 43px;
+    background-color: #CAAC57;
+    color: #fff;
+    line-height: 1.6;
+}
+.availability h6 span {
+    background-color: #CAAC57;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 5px;
+    height: 22px;
+    width: 22px;
+    text-align: center;
+    line-height: 22px;
+    display: inline-block;
+}
+.nav-tabs {
+    border-bottom: 1px solid #ededed;
+    max-width: 750px;
+}
+p, .tab-content{
+    font-weight: 400;
+}
+.nav-tabs > li > a{
+    color: #adadad;
 }

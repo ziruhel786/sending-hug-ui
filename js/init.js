@@ -43,3 +43,43 @@ $(".select-list li a").on("click", function () {
     $(this).parent().addClass("selected").siblings().removeClass("selected");
     $(this).parents('.selected-option').find(".filter-option").text(v);
 });
+$(document).on("click", '.description .thumbs > img', function () {
+    $('#xzoom-default').attr('src', $(this).attr('src')).attr('xoriginal', $(this).attr('src'));
+  //  $('#xzoom-default');
+
+});
+
+// product incriment/Decriment
+$(function () {
+    $('.add').on('click', function () {
+        var $qty = $(this).closest('.sp-quantity-box').find('.qty');
+        var currentVal = parseInt($qty.val());
+        if (!isNaN(currentVal)) {
+            $qty.val(currentVal + 1);
+        }
+    });
+    $('.minus').on('click', function () {
+        var $qty = $(this).closest('.sp-quantity-box').find('.qty');
+        var currentVal = parseInt($qty.val());
+        if (!isNaN(currentVal) && currentVal > 1) {
+            $qty.val(currentVal - 1);
+        }
+    });
+});
+// product is number
+var isNumberKey = function (evt) {
+        var charCode = (evt.which) ? evt.which : event.keyCode;
+
+        var excludedKey = (charCode >= 65 && charCode <= 90); // Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð±ÑƒÐºÐ²Ñ‹
+
+        if (!excludedKey) {
+            return;
+        } else {
+            return evt.preventDefault();
+        }
+    },
+    input = $('input[type=number]');
+
+input.on('keydown', function (event) {
+    isNumberKey(event);
+});
