@@ -349,7 +349,12 @@ header {
 .footer-nav li a{
     font-size: 12px;
 }
-
+.top-nav li.disabled a{
+    opacity: 0.3;
+}
+.top-nav li.disabled a:hover{
+    opacity: 1;
+}
 /* dropdown menu animation */
 .navbar-nav li {
     position: static;
@@ -559,7 +564,7 @@ header {
     background-color: transparent;
     font-size: 1.5em;
 }
-.search.sing-up > button, .btn-sh.btn-apply{
+.search.sing-up > button{
     height: 42px;
 }
 .sing-up > .btn-sh, .btn-sh.btn-apply{
@@ -780,6 +785,7 @@ footer h5{
 .sh-breadcrumb {
     margin-bottom: 0;
     background-color: transparent;
+    display: inline-block;
   /*  margin-top: -20px;*/
 }
 .sh-breadcrumb li a{
@@ -870,14 +876,14 @@ footer h5{
 .filter-nav > li.open > a:before{
     display: none;
 }
-.filter-nav:not(.navbar-nav){
-    width: auto;
-    position: absolute;
-    right: 0;
-}
+
 .filter-nav > li{
     display: inline-block;
     text-transform: uppercase;
+}
+.filter-nav.navbar-nav > li{
+    width: 100%;
+
 }
 /* custom checkbox */
 /*Adding custom checkbox icons*/
@@ -920,34 +926,6 @@ footer h5{
 }
 .custom-checkbox input[type="checkbox"]:checked + span:before{
     opacity: 0;
-}
-.item-quantity{
-    width: 55px;
-    position: relative;
-    letter-spacing: 0;
-}
-.item-quantity > div{
-    width: 52px;
-    height: 52px;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #fff;
-    border-radius: 50%;
-    border: 4px solid #ccc;
-    line-height: 45px;
-    font-size: 16px;
-    font-weight: 700;
-    position: absolute;
-    bottom: 0;
-}
-.item-quantity > span{
-    font-size: 12px;
-    display: block;
-    text-align: center;
-    position: absolute;
-    bottom: -16px;
-    width: 100%;
 }
 
 /*end*/
@@ -1081,4 +1059,36 @@ p, .tab-content{
 }
 .nav-tabs > li > a{
     color: #adadad;
+}
+.navbar-nav.filter-nav .dropdown-menu{
+    position: relative;
+    font-size: 11px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom:5px;
+}
+.navbar-nav.filter-nav .dropdown-menu li{
+    display: block;
+    padding-left: 10px;
+
+}
+.sh-pagination {
+    display: block;
+    text-align: right;
+    margin-bottom: 30px;
+    margin-top: 45px;
+}
+.sh-pagination li{
+    display: inline-block;
+}
+.sh-pagination li a:hover,
+.sh-pagination li.active a,
+.sh-pagination li.active a:hover {
+    background-color: transparent;
+    color: #CAAC57;
+}
+.sh-pagination li a {
+    border: 0;
+    background-color: transparent;
+    color: #4d4d4d;
 }
