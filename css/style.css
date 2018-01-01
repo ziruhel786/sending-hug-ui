@@ -1062,7 +1062,7 @@ p, .tab-content{
 }
 .navbar-nav.filter-nav .dropdown-menu{
     position: relative;
-    font-size: 11px;
+    font-size: 10px;
     width: 100%;
     margin-top: 10px;
     margin-bottom:5px;
