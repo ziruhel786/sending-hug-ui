@@ -12,7 +12,7 @@ $(document).on('mouseout', '.hover-nav .dropdown', function () {
     }
 );
 $(document).on('click', '.navbar-nav.filter-nav .dropdown > a', function () {
-        $(this).parent().toggleClass('open').siblings().removeClass('open');
+        $(this).parent().toggleClass('open');
     }
 );
 $('.slider').slick({
@@ -23,9 +23,9 @@ $('.slider').slick({
     variableWidth: true
 });
 // side nav open
-$(document).on("click", '.thumbs > img', function () {
-    $(this).parents('.product').find('.largeImage > img').attr('src', $(this).attr('src').replace('thumb', 'large'));
-    $(this).addClass("active").siblings().removeClass("active");
+$(document).on("click", '.nav-thumbs > li > a', function () {
+    $(this).parents('.product').find('.largeImage > img').attr('src', $(this).find('img').attr('src'));
+    $(this).parent().addClass("active").siblings().removeClass("active");
 });
 var sourceSwap = function () {
     var $this = $(this);
@@ -43,9 +43,9 @@ $(".select-list li a").on("click", function () {
     $(this).parent().addClass("selected").siblings().removeClass("selected");
     $(this).parents('.selected-option').find(".filter-option").text(v);
 });
-$(document).on("click", '.description .thumbs > img', function () {
-    $('#xzoom-default').attr('src', $(this).attr('src')).attr('xoriginal', $(this).attr('src'));
-  //  $('#xzoom-default');
+$(document).on("click", '.description .nav-thumbs > li > a', function () {
+    $('#xzoom-default').attr('src', $(this).find('img').attr('src')).attr('xoriginal', $(this).find('img').attr('src'));
+    console.log('click works');
 
 });
 
