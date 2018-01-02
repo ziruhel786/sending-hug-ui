@@ -27,14 +27,19 @@ $(document).on("click", '.nav-thumbs > li > a', function () {
     $(this).parents('.product').find('.largeImage > img').attr('src', $(this).find('img').attr('src'));
     $(this).parent().addClass("active").siblings().removeClass("active");
 });
-var sourceSwap = function () {
-    var $this = $(this);
-    var newSource = $this.data('hover');
-    $this.data('hover', $this.attr('src'));
-    $this.attr('src', newSource);
-};
-$(function () {
-    $('.largeImage > img').hover(sourceSwap, sourceSwap);
+// hover image change
+$('.largeImage > img').each(function() {
+
+    var std = $(this).attr("src");
+    var hover = std.replace($(this).attr("src"), $(this).data('hover'));
+    $(this).clone().insertAfter(this).attr('src', hover).siblings().css({
+        position:'absolute'
+    });
+    $(this).mouseenter(function() {
+        $(this).stop().fadeTo(350, 0);
+    }).mouseleave(function() {
+        $(this).stop().fadeTo(350, 1);
+    });
 });
 
 // select form options list
@@ -82,4 +87,20 @@ var isNumberKey = function (evt) {
 
 input.on('keydown', function (event) {
     isNumberKey(event);
+});
+//scroll to top
+$(window).scroll(function () {
+    var viewportHeight = $(window).height()*.5;
+    if ($(this).scrollTop() > viewportHeight) {
+        $('.scrollToTop').fadeIn();
+    } else {
+        $('.scrollToTop').fadeOut();
+    };
+});
+
+$('.scrollToTop').click(function () {
+    $("html, body").animate({
+        scrollTop: 0
+    }, 1000);
+    return false;
 });
