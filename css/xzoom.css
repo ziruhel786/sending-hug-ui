@@ -52,15 +52,13 @@
 
 /* Preview */
 .xzoom-preview {
-  border: 1px solid #888;
+  border: 1px solid #ededed;
   background: #2f4f4f;
-  box-shadow: -0px -0px 10px rgba(0,0,0,0.50);
 }
 
 /* Lens */
 .xzoom-lens {
-  border: 1px solid #555;
-  box-shadow: -0px -0px 10px rgba(0,0,0,0.50);
+  border: 1px solid #ededed;
   cursor: crosshair;
 }
 
@@ -77,10 +75,7 @@
 
 /* Additional class that applied to thumb when it is active */
 .xactive {
-  -webkit-box-shadow: 0px 0px 3px 0px rgba(74,169,210,1);
-  -moz-box-shadow: 0px 0px 3px 0px rgba(74,169,210,1);
-  box-shadow: 0px 0px 3px 0px rgba(74,169,210,1); 
-  border: 1px solid #4aaad2;
+  border: 1px solid #ededed;
 }
 
 /* Caption */
@@ -88,7 +83,7 @@
   position: absolute;
   bottom: -43px;
   left: 0;
-  background: #000;
+  background: #ededed;
   width: 100%;
   text-align: left;
 }
