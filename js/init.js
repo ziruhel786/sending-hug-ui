@@ -53,6 +53,10 @@ $(document).on("click", '.description .nav-thumbs > li > a', function () {
     console.log('click works');
 
 });
+$('.md-close').on("click", function () {
+    $(this).parents('.md-modal').removeClass('md-show');
+
+});
 
 // product incriment/Decriment
 $(function () {

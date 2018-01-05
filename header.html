@@ -21,9 +21,36 @@
             <div class="col-sm-4">
                 <div class="top-nav text-right">
                     <ul class="list-unstyled list-inline">
-                        <li><a href="#">Login</a></li>
-                        <li><a href="#">Checkout</a></li>
-                        <li><a href="#"><i class="zmdi zmdi-shopping-basket"></i> <span class="quantity">01</span> ITEMS</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="cart.html">Checkout</a></li>
+                        <li class="dropdown cart-dropdown">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                               aria-expanded="true"><i class="zmdi zmdi-shopping-basket"></i> <span
+                                    class="quantity">01</span> ITEMS</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <button type="button" class="close" data-dismiss="cart-dropdown"
+                                            aria-label="Close"><span aria-hidden="true">×</span></button>
+                                    <div class="cart-content">
+                                        <div class="cart-header">MY CART</div>
+                                        <div style="max-height: 220px; overflow-y: auto">
+                                            <div class="product-list">
+                                                <img src="images/g1.jpg">
+                                                <a href="product.html">BAZINGA! Crescent Moon Charm Bangle</a>
+                                                <p>Quantity: 1</p>
+                                                <p><span>£ 4.99</span><a href="javascript:;"
+                                                                         class="pull-right remove"><i
+                                                        class="zmdi zmdi-delete"></i></a></p>
+                                            </div>
+                                        </div>
+                                        <div class="subtotal">Subtotal: £ 4.99</div>
+                                        <div>
+                                            <button href="cart.html" class="btn btn-sh btn-atc btn-block">MY CART <i
+                                                class="zmdi zmdi-chevron-right"></i></button></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
