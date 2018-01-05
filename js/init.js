@@ -60,7 +60,6 @@ $('.md-close').on("click", function () {
 $('#atc').on("click", function (e) {
     e.stopPropagation();
     $('.cart-dropdown > a').click();
-
 });
 
 // product incriment/Decriment
