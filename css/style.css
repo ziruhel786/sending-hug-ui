@@ -1148,7 +1148,7 @@ p, .tab-content{
     font-size: 30px;
     background-position: center;
     background-repeat: no-repeat;
-    background: linear-gradient(135deg, #CAAC57, #595a5f);
+    background-color: #CAAC57;
     height: 60px;
     width: 60px;
     text-align: center;
