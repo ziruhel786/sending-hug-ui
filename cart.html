@@ -14,125 +14,96 @@
 </head>
 <body>
 <header data-url="header.html"></header>
-<section class="top fade-in one mt20">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="xzoom-container mt45">
-                    <img class="xzoom" id="xzoom-default" src="images/gallery/preview/01_b_car.jpg"
-                         xoriginal="images/gallery/original/01_b_car.jpg"/>
-                    <div class="xzoom-thumbs">
-                        <a href="images/gallery/original/01_b_car.jpg"><img class="xzoom-gallery"
-                                                                            src="images/gallery/thumbs/01_b_car.jpg"
-                                                                            xpreview="images/gallery/preview/01_b_car.jpg"
-                                                                            title="The description goes here"></a>
-                        <a href="images/gallery/original/02_o_car.jpg"><img class="xzoom-gallery"
-                                                                            src="images/gallery/preview/02_o_car.jpg"
-                                                                            title="The description goes here"></a>
-                        <a href="images/gallery/original/03_r_car.jpg"><img class="xzoom-gallery"
-                                                                            src="images/gallery/preview/03_r_car.jpg"
-                                                                            title="The description goes here"></a>
-                        <a href="images/gallery/original/04_g_car.jpg"><img class="xzoom-gallery"
-                                                                            src="images/gallery/preview/04_g_car.jpg"
-                                                                            title="The description goes here"></a>
-                    </div>
+<section class="top fade-in one">
+    <div class="container basket" id="basket">
+
+        <div class="row cart-row">
+            <div class="col-sm-12">
+                <h3>MY CART</h3>
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <div class="item-table table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>Item Details</th>
+                            <th></th>
+                            <th style="min-width: 85px;">Quantity</th>
+                            <th style="min-width: 85px;">Price</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="item-images">
+                                <a href="product.html" title="BAZINGA! Crescent Moon Charm Bangle"><img src="images/g1.jpg" alt="MEN's T-shirt"></a>
+
+                            </td>
+                            <td class="item-description">
+                                <h5>BAZINGA! Crescent Moon Charm Bangle</h5>
+                                <p>Code: 5521901</p>
+                                <a href="product.html" class="link-forget"><i class="zmdi zmdi-edit"></i></a>
+                            </td>
+                            <td class="relative">
+                                <div class="sp-quantity sp-quantity-box">
+                                    <div class="sp-minus fff"><a class="minus" href="javascript:;" data-multi="-1">-</a>
+                                    </div>
+                                    <div class="sp-input">
+                                        <input value="1" class="quntity-input qty" required="" min="1" step="1" pattern="[0-9]*" type="number">
+                                    </div>
+                                    <div class="sp-plus fff"><a class="add" href="javascript:;" data-multi="1">+</a></div>
+                                </div>
+                            </td>
+                            <td class="relative item-list-price">
+                                <h5>£4.99</h5>
+                                <a href="" class="remove"><i class="zmdi zmdi-delete"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="item-images">
+                                <a href="product.html" title="BAZINGA! Crescent Moon Charm Bangle"><img src="images/g2.jpg" alt="MEN's T-shirt"></a>
+
+                            </td>
+                            <td class="item-description">
+                                <h5>BAZINGA! Crescent Moon Charm Bangle</h5>
+                                <p>Code: 5521901</p>
+                                <a href="product.html" class="link-forget"><i class="zmdi zmdi-edit"></i></a>
+                            </td>
+                            <td class="relative">
+                                <div class="sp-quantity sp-quantity-box">
+                                    <div class="sp-minus fff"><a class="minus" href="javascript:;" data-multi="-1">-</a>
+                                    </div>
+                                    <div class="sp-input">
+                                        <input value="1" class="quntity-input qty" required="" min="1" step="1" pattern="[0-9]*" type="number">
+                                    </div>
+                                    <div class="sp-plus fff"><a class="add" href="javascript:;" data-multi="1">+</a></div>
+                                </div>
+                            </td>
+                            <td class="relative item-list-price">
+                                <h5>£4.99</h5>
+                                <a href="" class="remove"><i class="zmdi zmdi-delete"></i></a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            <div class="col-md-6  description">
-                <h3>BAZINGA! Crescent Moon Charm Bangle</h3>
-                <div class=" product-price">
-                    <h3>&pound;4.99</h3>
-                </div>
-                <form class="mt20">
-                    <label>Style:</label>
-                    <ul class="nav-thumbs">
-                        <li class="active">
-                            <a href="javascript:;" style="background-color: #CECDCB">
-                                <img src="images/p1.jpg">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;" style="background-color: #B88959">
-                                <img src="images/p1-gold.jpg">
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="form-group atc-box mt30">
-                        <div class="sp-quantity sp-quantity-box">
-                            <div class="sp-minus fff"><a class="minus" href="javascript:;" data-multi="-1">-</a></div>
-                            <div class="sp-input">
-                                <input value="1" class="quntity-input qty" required="" min="1" step="1" pattern="[0-9]*"
-                                       type="number">
-                            </div>
-                            <div class="sp-plus fff"><a class="add" href="javascript:;" data-multi="1">+</a></div>
-                        </div>
-                        <a class="btn btn-lg btn-sh btn-atc" type="submit">ADD TO CART</a>
+            <div class="col-xs-12 col-md-4 mt10">
+                <div class="cart-container">
+                    <h4>Subtotal (1 item): <span class="pull-right"> £ 14.00</span></h4>
+                    <p class="help-block">Delivery from £3.99 <a href="" class="link">Details</a></p>
+                    <p class="mt30">Have a discount code?</p>
+                    <div class="search sing-up btn-block discount">
+                        <input type="text" class="form-control" placeholder="Enter code here">
+                        <button type="submit" class="btn btn-sh">SUBMIT</button>
                     </div>
-
-                </form>
-                <div class="availability mt30">
-                    <h6><span>&#x2714;</span> IN STOCK</h6>
-                    <p>Order in the next <b>37 minutes</b> to receive this product tomorrow using <b>Next Working</b>
-                        Day.</p>
+                    <hr>
+                    <a class="btn btn-sh btn-atc btn-block mt30" type="submit"><i class="icon rip-checkbox-marked-circle"></i> &nbsp;&nbsp; CONTINU
+                        &amp; CHECKOUT &nbsp;<i class="icon rip-chevron-right"></i></a>
                 </div>
 
 
-                <div class="mt45">
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#description" aria-controls="description"
-                                                                  role="tab" data-toggle="tab">Description</a></li>
-                        <li role="presentation"><a href="#sizeGuide" aria-controls="sizeGuide" role="tab"
-                                                   data-toggle="tab">Size Guide</a></li>
-                        <li role="presentation"><a href="#delveryReturns" aria-controls="delveryReturns" role="tab"
-                                                   data-toggle="tab">Delivery &amp; Returns</a></li>
-                    </ul>
-
-                    <!-- Tab panes -->
-                    <div class="tab-content mt30">
-                        <div role="tabpanel" class="tab-pane fade in active" id="description">
-                            <p>Here is a great product, really funny to wear to parties and stand out! This amazing
-                                &#8220;BAZINGA! brand new funny nerd geeky big bang theory t-shirt 100% cotton&#8221;
-                                you wouldn&#8217;t find it anywhere in this lucrative price. <br><br>
-
-                                New without tags: A brand-new, unused and unworn item that is not in its original retail
-                                packaging or may be missing its original retail packaging materials (such as the
-                                original box or bag). The original tags may not be attached. For example, new shoes
-                                (with absolutely no signs of wear) that are no longer in their original box fall into
-                                this category</p>
-                        </div>
-                        <div role="tabpanel" class="tab-pane fade" id="sizeGuide">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, totam omnis, sit quasi
-                            nobis libero.
-                            <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam eligendi necessitatibus
-                            minima nihil quidem nobis rerum in consequuntur, debitis quod accusantium earum aspernatur
-                            delectus reprehenderit, veritatis. At ab fugiat harum magni exercitationem libero quis
-                            incidunt, soluta tempore sed nam, reiciendis amet assumenda possimus sequi esse placeat
-                            ducimus provident quibusdam qui.
-
-                            <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, dolor.
-                        </div>
-                        <div role="tabpanel" class="tab-pane fade" id="delveryReturns">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, totam omnis, sit quasi
-                            nobis libero.
-                            <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam eligendi necessitatibus
-                            minima nihil quidem nobis rerum in consequuntur, debitis quod accusantium earum aspernatur
-                            delectus reprehenderit, veritatis. At ab fugiat harum magni exercitationem libero quis
-                            incidunt, soluta tempore sed nam, reiciendis amet assumenda possimus sequi esse placeat
-                            ducimus provident quibusdam qui.
-
-                            <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, dolor.
-                        </div>
-                    </div>
-
-                </div>
             </div>
         </div>
-    </div>
-
-</section>
-<section class="fade-in one mt45 mb20">
-    <div class="container">
         <div class="row">
             <div class="best-seller col-sm-12 text-center">
                 <h4>YOU MAY ALSO LIKE</h4>
@@ -577,21 +548,19 @@
                 </div>
             </div>
         </div>
-    </div>
 
+    </div>
 </section>
 <footer class="footer" data-url="footer.html"></footer>
 <a href="#" class="scrollToTop" id="hero-arrow" >&#8682;</a>
 <div class="md-overlay"></div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/modalEffects.js"></script>
 <script type="text/javascript" src="js/slick.js"></script>
-<script type="text/javascript" src="js/xzoom.min.js"></script>
-<script type="text/javascript" src="js/setup.js"></script>
 <script type="text/javascript" src="js/init.js"></script>
 </body>
 </html>

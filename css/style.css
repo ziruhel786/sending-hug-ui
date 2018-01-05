@@ -1074,7 +1074,7 @@ input[type="number"] {
     min-height: 43px;
     background-color: #CAAC57;
     color: #fff;
-    line-height: 1.6;
+    line-height: 26px;
 }
 .availability h6 span {
     background-color: #CAAC57;
@@ -1148,7 +1148,7 @@ p, .tab-content{
     font-size: 30px;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #CAAC57;
+    background: linear-gradient(135deg, #CAAC57, #595a5f);
     height: 60px;
     width: 60px;
     text-align: center;
@@ -1278,4 +1278,72 @@ button.close{
 .remove, .btn-link {
     color: #bdbdbd !important;
     font-size: 1.25em;
+}
+.price{
+    font-weight: 700;
+}
+.ymlike-carousel .carousel-inner{
+    height: auto;
+    min-height: unset;
+}
+.carousel-control{
+    width: auto;
+}
+.leftArrow, .rightArrow {
+    top: 40%;
+    color: #CAAC57;
+}
+.rightArrow {
+    left: unset;
+    right: 0;
+}
+.item-table {
+    border: 1px solid #ededed;
+    margin-top: 10px;
+    overflow-x: auto;
+}
+.item-table th {
+    background-color: #ededed;
+    font-weight: 400;
+}
+.item-table th{
+    white-space: nowrap;
+}
+.item-table th, .item-table td {
+    padding: 15px !important;
+    border-color: #ededed !important;
+}
+
+.table .item-images {
+    width: 90px;
+    text-align: center;
+}
+
+.item-images img {
+    max-width: 75px;
+}
+
+.item-description {
+    max-width: 350px;
+    position: relative;
+}
+
+.item-list-price a {
+    position: absolute;
+    bottom: 20px;
+    left: 40%;
+}
+.item-description h5,
+.item-list-price h5,
+.cart-container h4{
+    color: #000000;
+    font-weight: 400;
+}
+.cart-container{
+    padding: 45px 30px;
+    padding-top: 0;
+}
+.discount{
+    margin-top: 5px;
+    margin-bottom: 30px;
 }
