@@ -57,6 +57,11 @@ $('.md-close').on("click", function () {
     $(this).parents('.md-modal').removeClass('md-show');
 
 });
+$('#atc').on("click", function (e) {
+    e.stopPropagation();
+    $('.cart-dropdown > a').click();
+
+});
 
 // product incriment/Decriment
 $(function () {
