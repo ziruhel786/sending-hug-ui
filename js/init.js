@@ -57,9 +57,16 @@ $('.md-close').on("click", function () {
     $(this).parents('.md-modal').removeClass('md-show');
 
 });
-$('#atc').on("click", function (e) {
+/*$('#atc').on("click", function (e) {
     e.stopPropagation();
     $('.cart-dropdown > a').click();
+});*/
+toastr.options = {
+    "closeButton": true
+}
+$('#atc').on("click", function (e) {
+    e.stopPropagation();
+    toastr['success']('Item added in cart successfully.',"Success!");
 });
 
 // product incriment/Decriment
