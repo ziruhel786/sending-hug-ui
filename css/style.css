@@ -333,7 +333,7 @@ header {
 .top-nav li a img{
     vertical-align: inherit;
 }
-.top-nav li a{
+.top-nav li a:not(.btn){
     color: #000;
 }
 .navbar-nav li a,
@@ -342,7 +342,7 @@ header {
     color: #4d4d4d;
 }
 
-.top-nav li a:hover,
+.top-nav li a:not(.btn):hover,
 .navbar-nav > li > a:hover,
 .navbar-nav .open > a,
 .navbar-nav .open > a:hover,
@@ -1350,3 +1350,117 @@ button.close{
 .login-container h4{
     font-size: 17px;
 }
+/* checkout */
+.checkout-nav {
+    max-width: 600px;
+    counter-reset: step;
+    margin: 3em auto;
+    height: 5em;
+}
+.checkout-nav li {
+    list-style: none;
+    position: relative;
+    width: 25%;
+    float: left;
+    text-align: center;
+    font-weight: 400;
+}
+.checkout-nav li.active {
+    color: #000;
+}
+
+.checkout-nav li.active:before {
+    border-color: #CAAC57;
+}
+
+.checkout-tab li {
+    list-style: none;
+}
+
+.checkout-nav li:before,
+.checkout-tab li.active > a:after {
+    content: counter(step);
+    counter-increment: step;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #ededed;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #fdfdfd;
+}
+
+.checkout-tab li.active > a:after {
+    content: '\2714';
+    height: 28px;
+    width: 28px;
+    font-size: 16px;
+    color: #000;
+    border: 1px solid #000;
+    position: relative;
+    bottom: 15px;
+    line-height: 28px;
+    font-weight: 300;
+    outline: none;
+}
+
+.checkout-tab li > a > .review-card {
+    border-color: #D0D0D0;
+}
+
+.checkout-tab li > a:hover {
+    text-decoration: none;
+}
+
+.checkout-tab li.active > a > .review-card,
+.checkout-tab li > a:hover > .review-card {
+    border: 1px solid #000;
+}
+
+.checkout-nav li.active:after {
+    background-color: #000;
+}
+
+.checkout-nav li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #ededed;
+    position: absolute;
+    top: 20px;
+    left: -50%;
+    z-index: -1;
+}
+.checkout-nav li:first-child:after {
+    content: none;
+}
+.checkout {
+    border: 1px solid #ededed;
+    padding: 60px 15px;
+    max-width: 1000px;
+    margin: 30px auto;
+    font-weight: 400;
+}
+.have-password ~ input {
+    height: 0px;
+    -webkit-transition: height, 0.35s linear;
+    transition: height, 0.35s linear;
+    visibility: hidden;
+    margin-top: 0;
+}
+
+.have-password:checked ~ input {
+    height: 40px;
+    -webkit-transition: height, 0.35s linear;
+    transition: height, 0.35s linear;
+    visibility: visible;
+    margin-top: 1em;
+}
+.radio-btn{
+    display: block;
+    font-weight: 400;
+}
+/*end */
