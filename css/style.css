@@ -351,7 +351,8 @@ header {
 .social-nav li a:hover,
 .social-nav li a:focus,
 .footer-nav li a:hover,
-.footer-nav li a:focus{
+.footer-nav li a:focus,
+.account-nav > li > a:hover{
     background-color: transparent;
 }
 
@@ -758,13 +759,15 @@ footer h5{
     margin-top: 25px;
     letter-spacing: .05em;
 }
-.footer-nav li a{
+.footer-nav li a,
+.account-nav > li > a{
     font-weight: 500;
     line-height: 22px;
     letter-spacing: .05em;
     font-size: 13px;
 }
-.footer-nav li a:hover{
+.footer-nav li a:hover,
+.account-nav > li > a:hover{
     color: #000;
 }
 .copyright{
@@ -1300,8 +1303,9 @@ button.close{
 }
 .item-table {
     border: 1px solid #ededed;
-    margin-top: 10px;
+    margin-top: 15px;
     overflow-x: auto;
+    font-weight: 400;
 }
 .item-table th {
     background-color: #ededed;
@@ -1457,3 +1461,56 @@ button.close{
 
 }
 /*end */
+.tab-container{
+    width: 200px;
+    height: 100%;
+    float: left;
+    padding: 45px 0;
+}
+.profile-container {
+    position: relative;
+    margin-left: 250px;
+}
+
+.account-nav > li.active > a {
+    background-color: #fff;
+    color: #000000;
+}
+.account-nav > li > a{
+    color: #7d7d7d;
+}
+
+.account-nav > li > a > i {
+    font-size: 1.25em !important;
+    margin-right: 10px;
+    vertical-align: inherit;
+}
+
+.main-container .tab-content {
+    padding: 0;
+}
+.main-container{
+    position: relative;
+    background-color: #fff;
+   padding: 15px 30px;
+    float: left;
+    width: calc(100% - 200px);
+}
+.dl-customize > dt{
+    text-align: left;
+}
+.dl-customize > dd{
+    font-weight: 400;
+}
+.main-container .login-container{
+    margin-left: 0;
+    padding-top: 15px;
+    font-weight: 400;
+    margin-bottom: 45px;
+}
+.main-container .form-control{
+    height: 30px;
+}
+textarea.form-control {
+    height: auto !important;
+}
