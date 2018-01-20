@@ -763,8 +763,10 @@ footer h5{
 .account-nav > li > a{
     font-weight: 500;
     line-height: 22px;
-    letter-spacing: .05em;
     font-size: 13px;
+}
+.footer-nav li a{
+    letter-spacing: .05em;
 }
 .footer-nav li a:hover,
 .account-nav > li > a:hover{
