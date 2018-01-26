@@ -17,7 +17,7 @@
     <div class="top-header">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="hidden-xs col-sm-3 col-lg-4">
                     <div class="top-nav">
                         <ul class="list-unstyled list-inline">
                             <li><a href="#"><img src="images/1.jpg"> EN</a></li>
@@ -25,7 +25,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="hidden-xs col-sm-4 col-lg-4">
                     <div class="top-nav text-center">
                         <ul class="list-unstyled list-inline">
                             <li><a href="#">Contact</a></li>
@@ -34,11 +34,11 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-5 col-lg-4">
                     <div class="top-nav text-right">
                         <ul class="list-unstyled list-inline">
                             <li><a href="javascript:;" class="md-trigger" data-modal="login">Login</a></li>
-                            <li><a href="cart.html">Checkout</a></li>
+                            <li class="hidden-xxs"><a href="cart.html">Checkout</a></li>
                             <li class="dropdown cart-dropdown">
                                 <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                                    aria-expanded="true"><i class="zmdi zmdi-shopping-basket"></i> <span
@@ -80,16 +80,22 @@
                     <a href="index.html" class="logo"><img src="images/hug_v12.jpg" alt="Sending Hug"></a>
                 </div>
                 <div class="col-md-9 text-right text-uppercase">
-                    <div class="pull-right search">
+                    <button type="button" class="navbar-toggle btn-menu" data-toggle="collapse" data-target="#search">
+                        <i class="zmdi zmdi-search"></i>
+                    </button>
+                    <div class="pull-right search navbar-collapse collapse" id="search">
                         <input type="text" class="form-control" placeholder="Search">
                         <button type="submit"><i class="zmdi zmdi-search"></i></button>
                     </div>
                 </div>
                 <div class="col-sm-12 text-right">
-                    <ul class="nav navbar-nav hover-nav text-uppercase">
+                    <button type="button" class="navbar-toggle btn-menu" data-toggle="collapse" data-target="#header-nav">
+                        <i class="zmdi zmdi-menu"></i>
+                    </button>
+                    <ul id="header-nav" class="nav navbar-nav hover-nav text-uppercase navbar-collapse collapse">
                         <li class="dropdown header-menu">
                             <a href="" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown"
-                               aria-expanded="true">Jewelry</a>
+                               aria-expanded="true">Jewelry <span class="arrow"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="products.html">Sarees</a></li>
                                 <li><a href="products.html">Kurta &amp;
@@ -104,7 +110,7 @@
                         </li>
                         <li class="dropdown header-menu">
                             <a href="" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown"
-                               aria-expanded="true">Features</a>
+                               aria-expanded="true">Features <span class="arrow"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="products.html">Sarees</a></li>
                                 <li><a href="products.html">Kurta &amp;
@@ -119,7 +125,7 @@
                         </li>
                         <li class="dropdown header-menu">
                             <a href="" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown"
-                               aria-expanded="true">Fine Jewelry</a>
+                               aria-expanded="true">Fine Jewelry <span class="arrow"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="products.html">Sarees</a></li>
                                 <li><a href="products.html">Kurta &amp;
@@ -134,7 +140,7 @@
                         </li>
                         <li class="dropdown header-menu">
                             <a href="" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown"
-                               aria-expanded="true">Gifts</a>
+                               aria-expanded="true">Gifts <span class="arrow"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="products.html">Sarees</a></li>
                                 <li><a href="products.html">Kurta &amp;
@@ -147,7 +153,6 @@
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="">Positive Impact</a></li>
                         <li><a href="">More</a></li>
                         <li><a href="">Sale</a></li>
                         <li><a href="">The Blog</a></li>

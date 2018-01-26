@@ -525,6 +525,7 @@ header {
     position: relative !important;
     margin-top: 15px;
     margin-bottom: 5px;
+    padding-right: 0 !important;
 }
 
 .search > input {
@@ -1524,7 +1525,7 @@ textarea.form-control {
     background-color: #f5f5f5;
 }
 .header-menu.open .dropdown-menu{
-    padding: 1em 0;
+    padding: 1.5em 0;
 }
 .header-menu li a,
 .header-menu li{
@@ -1532,4 +1533,106 @@ textarea.form-control {
 }
 .navbar-nav > li.header-menu.open > a::before {
     border-bottom-color: #f5f5f5 !important;
+}
+.navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+}
+@media (max-width: 1200px){
+    body {
+        letter-spacing: .12em;
+    }
+    .navbar-nav li a, .footer-nav li a,
+    .top-header{
+        font-size: 11px;
+    }
+    .navbar-nav li a, .footer-nav li a,
+    .top-nav > ul > li{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .table-row{
+        display: table;
+    }
+    .table-row > div {
+        display: table-cell;
+    }
+    .logo > img {
+        height: 90px;
+    }
+}
+@media (max-width: 970px){
+.navbar-nav li a{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+}
+@media (max-width: 768px){
+    #search {
+        position: absolute !important;
+        width: 100%;
+        right: 0;
+        background-color: #f5f5f5;
+        padding: 15px !important;
+        top: 42px;
+    }
+    #search > button {
+        right: 15px;
+        top: 15px;
+    }
+    #header-nav {
+        background-color: #f5f5f5;
+        margin-left: -15px;
+        margin-right: -15px;
+        width: calc(100% + 30px);
+    }
+    #header-nav > li{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .header-menu li a {
+        background-color: #f0f0f0;
+        padding: 8px 25px !important;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .navbar-nav li a{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .logo > img {
+        top: -35px;
+    }
+    .top-header {
+        background-color: #fff;
+    }
+    .navbar-nav li {
+        display: block;
+        text-align: left;
+    }
+    .arrow:after {
+        content: "+";
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 8px;
+        font-style: normal;
+        font-size: 16px;
+        opacity: 1;
+        transition: all 350ms ease;
+        font-weight: 400;
+    }
+    .open .arrow:after {
+        content: '\2013';
+    }
+
+}
+@media (max-width: 500px){
+    .hidden-xxs{
+        display: none !important;
+    }
+    .logo > img {
+        height: 70px;
+        top: -25px;
+    }
 }
