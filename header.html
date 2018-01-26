@@ -1,7 +1,7 @@
 <div class="top-header">
     <div class="container">
         <div class="row">
-            <div class="col-sm-4">
+            <div class="hidden-xs col-sm-3 col-lg-4">
                 <div class="top-nav">
                     <ul class="list-unstyled list-inline">
                         <li><a href="#"><img src="images/1.jpg"> EN</a></li>
@@ -9,7 +9,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="hidden-xs col-sm-4 col-lg-4">
                 <div class="top-nav text-center">
                     <ul class="list-unstyled list-inline">
                         <li><a href="#">Contact</a></li>
@@ -18,11 +18,11 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-5 col-lg-4">
                 <div class="top-nav text-right">
                     <ul class="list-unstyled list-inline">
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="cart.html">Checkout</a></li>
+                        <li><a href="login.html" class="md-trigger">Login</a></li>
+                        <li class="hidden-xxs"><a href="cart.html">Checkout</a></li>
                         <li class="dropdown cart-dropdown">
                             <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                                aria-expanded="true"><i class="zmdi zmdi-shopping-basket"></i> <span
@@ -46,7 +46,7 @@
                                         <div class="subtotal">Subtotal: £ 4.99</div>
                                         <div>
                                             <a href="cart.html" class="btn btn-sh btn-atc btn-block">MY CART <i
-                                                class="zmdi zmdi-chevron-right"></i></a></div>
+                                                    class="zmdi zmdi-chevron-right"></i></a></div>
                                     </div>
                                 </li>
                             </ul>
@@ -64,562 +64,79 @@
                 <a href="index.html" class="logo"><img src="images/hug_v12.jpg" alt="Sending Hug"></a>
             </div>
             <div class="col-md-9 text-right text-uppercase">
-                <div class="pull-right search">
+                <button type="button" class="navbar-toggle btn-menu" data-toggle="collapse" data-target="#search">
+                    <i class="zmdi zmdi-search"></i>
+                </button>
+                <div class="pull-right search navbar-collapse collapse" id="search">
                     <input type="text" class="form-control" placeholder="Search">
                     <button type="submit"><i class="zmdi zmdi-search"></i></button>
                 </div>
             </div>
             <div class="col-sm-12 text-right">
-                <ul class="nav navbar-nav hover-nav text-uppercase">
-                    <li class="dropdown">
+                <button type="button" class="navbar-toggle btn-menu" data-toggle="collapse" data-target="#header-nav">
+                    <i class="zmdi zmdi-menu"></i>
+                </button>
+                <ul id="header-nav" class="nav navbar-nav hover-nav text-uppercase navbar-collapse collapse">
+                    <li class="dropdown header-menu">
                         <a href="" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown"
-                           aria-expanded="true">Jewelry</a>
-                        <ul class="dropdown-menu fadeInUp animated">
-                            <li>
-                                <div class="mega-menu">
-                                    <div class="row">
-                                        <div class="col-md-8 col-sm-8">
-                                            <div class="row">
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    Clothing</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Sarees</a></li>
-                                                        <li><a href="products.html">Kurta &amp;
-                                                            Kurti </a></li>
-                                                        <li><a href="products.html">Dress
-                                                            Materials</a></li>
-                                                        <li><a href="products.html">Salwar Kameez
-                                                            Sets</a></li>
-                                                        <li><a href="products.html">Dress sale</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    jewellery</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Rings</a></li>
-                                                        <li><a href="products.html">Earrings</a>
-                                                        </li>
-                                                        <li><a href="products.html">Jewellery
-                                                            Sets </a></li>
-                                                        <li><a href="products.html">Pendants &amp;
-                                                            Lockets</a></li>
-                                                        <li><a href="products.html">plastic
-                                                            Jewellery</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    Beauty</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Make Up</a>
-                                                        </li>
-                                                        <li><a href="products.html">Hair Care</a>
-                                                        </li>
-                                                        <li><a href="products.html">Deodorants</a>
-                                                        </li>
-                                                        <li><a href="products.html">Bath &amp;
-                                                            Body </a></li>
-                                                        <li><a href="products.html">skin care</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    Watches</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Fastrack </a>
-                                                        </li>
-                                                        <li><a href="products.html">Timex</a></li>
-                                                        <li><a href="products.html">Titan</a></li>
-                                                        <li><a href="products.html">Fossil</a></li>
-                                                        <li><a href="products.html">casio</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    Footwear</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Flats</a></li>
-                                                        <li><a href="products.html">Heels </a></li>
-                                                        <li><a href="products.html">Boots</a></li>
-                                                        <li><a href="products.html">Slippers</a>
-                                                        </li>
-                                                        <li><a href="products.html">shoes</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    Western Wear</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Jeans</a></li>
-                                                        <li><a href="products.html">Polo's &amp;
-                                                            T-Shirts</a></li>
-                                                        <li><a href="products.html">Shirts
-                                                            Tops </a></li>
-                                                        <li><a href="products.html">Gymwear</a>
-                                                        </li>
-                                                        <li><a href="products.html">Sleep Wear</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">Bags
-                                                    &amp; Wallets</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Handbags</a>
-                                                        </li>
-                                                        <li><a href="products.html">Sling Bags</a>
-                                                        </li>
-                                                        <li><a href="products.html">Wallets &amp;
-                                                            Belts</a></li>
-                                                        <li><a href="products.html">Totes </a></li>
-                                                        <li><a href="products.html">travel Bags</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    Sunglasses</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Over-sized </a>
-                                                        </li>
-                                                        <li><a href="products.html">Wayfarer</a>
-                                                        </li>
-                                                        <li><a href="products.html">Premium
-                                                            Brands</a></li>
-                                                        <li><a href="products.html">UV glass</a>
-                                                        </li>
-                                                        <li><a href="products.html">colores</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4 col-md-4">
-                                            <div class="menu-banner text-right">
-                                                <img class="img-responsive" src="images/9.jpg" alt="R"> <span
-                                                    class="line"></span>
-                                                <div class="content">
-                                                    <div class="text text-1">collection</div>
-                                                    <div class="text text-2">women's</div>
-                                                    <div class="text text-3">save up to 25% off</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown"
-                           aria-expanded="true">Features</a>
-                        <ul class="dropdown-menu fadeInUp animated">
-                            <li>
-                                <div class="mega-menu">
-                                    <div class="row">
-                                        <div class="col-md-8 col-sm-8">
-                                            <div class="row">
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    Clothing</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Sarees</a></li>
-                                                        <li><a href="products.html">Kurta &amp;
-                                                            Kurti </a></li>
-                                                        <li><a href="products.html">Dress
-                                                            Materials</a></li>
-                                                        <li><a href="products.html">Salwar Kameez
-                                                            Sets</a></li>
-                                                        <li><a href="products.html">Dress sale</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    jewellery</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Rings</a></li>
-                                                        <li><a href="products.html">Earrings</a>
-                                                        </li>
-                                                        <li><a href="products.html">Jewellery
-                                                            Sets </a></li>
-                                                        <li><a href="products.html">Pendants &amp;
-                                                            Lockets</a></li>
-                                                        <li><a href="products.html">plastic
-                                                            Jewellery</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    Beauty</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Make Up</a>
-                                                        </li>
-                                                        <li><a href="products.html">Hair Care</a>
-                                                        </li>
-                                                        <li><a href="products.html">Deodorants</a>
-                                                        </li>
-                                                        <li><a href="products.html">Bath &amp;
-                                                            Body </a></li>
-                                                        <li><a href="products.html">skin care</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    Watches</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Fastrack </a>
-                                                        </li>
-                                                        <li><a href="products.html">Timex</a></li>
-                                                        <li><a href="products.html">Titan</a></li>
-                                                        <li><a href="products.html">Fossil</a></li>
-                                                        <li><a href="products.html">casio</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    Footwear</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Flats</a></li>
-                                                        <li><a href="products.html">Heels </a></li>
-                                                        <li><a href="products.html">Boots</a></li>
-                                                        <li><a href="products.html">Slippers</a>
-                                                        </li>
-                                                        <li><a href="products.html">shoes</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    Western Wear</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Jeans</a></li>
-                                                        <li><a href="products.html">Polo's &amp;
-                                                            T-Shirts</a></li>
-                                                        <li><a href="products.html">Shirts
-                                                            Tops </a></li>
-                                                        <li><a href="products.html">Gymwear</a>
-                                                        </li>
-                                                        <li><a href="products.html">Sleep Wear</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">Bags
-                                                    &amp; Wallets</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Handbags</a>
-                                                        </li>
-                                                        <li><a href="products.html">Sling Bags</a>
-                                                        </li>
-                                                        <li><a href="products.html">Wallets &amp;
-                                                            Belts</a></li>
-                                                        <li><a href="products.html">Totes </a></li>
-                                                        <li><a href="products.html">travel Bags</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    Sunglasses</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Over-sized </a>
-                                                        </li>
-                                                        <li><a href="products.html">Wayfarer</a>
-                                                        </li>
-                                                        <li><a href="products.html">Premium
-                                                            Brands</a></li>
-                                                        <li><a href="products.html">UV glass</a>
-                                                        </li>
-                                                        <li><a href="products.html">colores</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4 col-md-4">
-                                            <div class="menu-banner text-right">
-                                                <img class="img-responsive" src="images/9.jpg" alt="R"> <span
-                                                    class="line"></span>
-                                                <div class="content">
-                                                    <div class="text text-1">collection</div>
-                                                    <div class="text text-2">women's</div>
-                                                    <div class="text text-3">save up to 25% off</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown"
-                           aria-expanded="true">Fine Jewelry</a>
+                           aria-expanded="true">Jewelry <span class="arrow"></span></a>
                         <ul class="dropdown-menu">
-                            <li>
-                                <div class="mega-menu">
-                                    <div class="row">
-                                        <div class="col-md-8 col-sm-8">
-                                            <div class="row">
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    Clothing</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Sarees</a></li>
-                                                        <li><a href="products.html">Kurta &amp;
-                                                            Kurti </a></li>
-                                                        <li><a href="products.html">Dress
-                                                            Materials</a></li>
-                                                        <li><a href="products.html">Salwar Kameez
-                                                            Sets</a></li>
-                                                        <li><a href="products.html">Dress sale</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    jewellery</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Rings</a></li>
-                                                        <li><a href="products.html">Earrings</a>
-                                                        </li>
-                                                        <li><a href="products.html">Jewellery
-                                                            Sets </a></li>
-                                                        <li><a href="products.html">Pendants &amp;
-                                                            Lockets</a></li>
-                                                        <li><a href="products.html">plastic
-                                                            Jewellery</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    Beauty</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Make Up</a>
-                                                        </li>
-                                                        <li><a href="products.html">Hair Care</a>
-                                                        </li>
-                                                        <li><a href="products.html">Deodorants</a>
-                                                        </li>
-                                                        <li><a href="products.html">Bath &amp;
-                                                            Body </a></li>
-                                                        <li><a href="products.html">skin care</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    Watches</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Fastrack </a>
-                                                        </li>
-                                                        <li><a href="products.html">Timex</a></li>
-                                                        <li><a href="products.html">Titan</a></li>
-                                                        <li><a href="products.html">Fossil</a></li>
-                                                        <li><a href="products.html">casio</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    Footwear</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Flats</a></li>
-                                                        <li><a href="products.html">Heels </a></li>
-                                                        <li><a href="products.html">Boots</a></li>
-                                                        <li><a href="products.html">Slippers</a>
-                                                        </li>
-                                                        <li><a href="products.html">shoes</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    Western Wear</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Jeans</a></li>
-                                                        <li><a href="products.html">Polo's &amp;
-                                                            T-Shirts</a></li>
-                                                        <li><a href="products.html">Shirts
-                                                            Tops </a></li>
-                                                        <li><a href="products.html">Gymwear</a>
-                                                        </li>
-                                                        <li><a href="products.html">Sleep Wear</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">Bags
-                                                    &amp; Wallets</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Handbags</a>
-                                                        </li>
-                                                        <li><a href="products.html">Sling Bags</a>
-                                                        </li>
-                                                        <li><a href="products.html">Wallets &amp;
-                                                            Belts</a></li>
-                                                        <li><a href="products.html">Totes </a></li>
-                                                        <li><a href="products.html">travel Bags</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    Sunglasses</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Over-sized </a>
-                                                        </li>
-                                                        <li><a href="products.html">Wayfarer</a>
-                                                        </li>
-                                                        <li><a href="products.html">Premium
-                                                            Brands</a></li>
-                                                        <li><a href="products.html">UV glass</a>
-                                                        </li>
-                                                        <li><a href="products.html">colores</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4 col-md-4">
-                                            <div class="menu-banner text-right">
-                                                <img class="img-responsive" src="images/9.jpg" alt="R"> <span
-                                                    class="line"></span>
-                                                <div class="content">
-                                                    <div class="text text-1">collection</div>
-                                                    <div class="text text-2">women's</div>
-                                                    <div class="text text-3">save up to 25% off</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <li><a href="products.html">Sarees</a></li>
+                            <li><a href="products.html">Kurta &amp;
+                                Kurti </a></li>
+                            <li><a href="products.html">Dress
+                                Materials</a></li>
+                            <li><a href="products.html">Salwar Kameez
+                                Sets</a></li>
+                            <li><a href="products.html">Dress sale</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown header-menu">
                         <a href="" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown"
-                           aria-expanded="true">Gifts</a>
-                        <ul class="dropdown-menu fadeInUp animated">
-                            <li>
-                                <div class="mega-menu">
-                                    <div class="row">
-                                        <div class="col-md-8 col-sm-8">
-                                            <div class="row">
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    Clothing</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Sarees</a></li>
-                                                        <li><a href="products.html">Kurta &amp;
-                                                            Kurti </a></li>
-                                                        <li><a href="products.html">Dress
-                                                            Materials</a></li>
-                                                        <li><a href="products.html">Salwar Kameez
-                                                            Sets</a></li>
-                                                        <li><a href="products.html">Dress sale</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    jewellery</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Rings</a></li>
-                                                        <li><a href="products.html">Earrings</a>
-                                                        </li>
-                                                        <li><a href="products.html">Jewellery
-                                                            Sets </a></li>
-                                                        <li><a href="products.html">Pendants &amp;
-                                                            Lockets</a></li>
-                                                        <li><a href="products.html">plastic
-                                                            Jewellery</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    Beauty</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Make Up</a>
-                                                        </li>
-                                                        <li><a href="products.html">Hair Care</a>
-                                                        </li>
-                                                        <li><a href="products.html">Deodorants</a>
-                                                        </li>
-                                                        <li><a href="products.html">Bath &amp;
-                                                            Body </a></li>
-                                                        <li><a href="products.html">skin care</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    Watches</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Fastrack </a>
-                                                        </li>
-                                                        <li><a href="products.html">Timex</a></li>
-                                                        <li><a href="products.html">Titan</a></li>
-                                                        <li><a href="products.html">Fossil</a></li>
-                                                        <li><a href="products.html">casio</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    Footwear</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Flats</a></li>
-                                                        <li><a href="products.html">Heels </a></li>
-                                                        <li><a href="products.html">Boots</a></li>
-                                                        <li><a href="products.html">Slippers</a>
-                                                        </li>
-                                                        <li><a href="products.html">shoes</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    Western Wear</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Jeans</a></li>
-                                                        <li><a href="products.html">Polo's &amp;
-                                                            T-Shirts</a></li>
-                                                        <li><a href="products.html">Shirts
-                                                            Tops </a></li>
-                                                        <li><a href="products.html">Gymwear</a>
-                                                        </li>
-                                                        <li><a href="products.html">Sleep Wear</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">Bags
-                                                    &amp; Wallets</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Handbags</a>
-                                                        </li>
-                                                        <li><a href="products.html">Sling Bags</a>
-                                                        </li>
-                                                        <li><a href="products.html">Wallets &amp;
-                                                            Belts</a></li>
-                                                        <li><a href="products.html">Totes </a></li>
-                                                        <li><a href="products.html">travel Bags</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-3"><h2 class="title">
-                                                    Sunglasses</h2>
-                                                    <ul class="links">
-                                                        <li><a href="products.html">Over-sized </a>
-                                                        </li>
-                                                        <li><a href="products.html">Wayfarer</a>
-                                                        </li>
-                                                        <li><a href="products.html">Premium
-                                                            Brands</a></li>
-                                                        <li><a href="products.html">UV glass</a>
-                                                        </li>
-                                                        <li><a href="products.html">colores</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4 col-md-4">
-                                            <div class="menu-banner text-right">
-                                                <img class="img-responsive" src="images/9.jpg" alt="R"> <span
-                                                    class="line"></span>
-                                                <div class="content">
-                                                    <div class="text text-1">collection</div>
-                                                    <div class="text text-2">women's</div>
-                                                    <div class="text text-3">save up to 25% off</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                           aria-expanded="true">Features <span class="arrow"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="products.html">Sarees</a></li>
+                            <li><a href="products.html">Kurta &amp;
+                                Kurti </a></li>
+                            <li><a href="products.html">Dress
+                                Materials</a></li>
+                            <li><a href="products.html">Salwar Kameez
+                                Sets</a></li>
+                            <li><a href="products.html">Dress sale</a>
                             </li>
                         </ul>
                     </li>
-                    <li><a href="">Positive Impact</a></li>
+                    <li class="dropdown header-menu">
+                        <a href="" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown"
+                           aria-expanded="true">Fine Jewelry <span class="arrow"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="products.html">Sarees</a></li>
+                            <li><a href="products.html">Kurta &amp;
+                                Kurti </a></li>
+                            <li><a href="products.html">Dress
+                                Materials</a></li>
+                            <li><a href="products.html">Salwar Kameez
+                                Sets</a></li>
+                            <li><a href="products.html">Dress sale</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown header-menu">
+                        <a href="" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown"
+                           aria-expanded="true">Gifts <span class="arrow"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="products.html">Sarees</a></li>
+                            <li><a href="products.html">Kurta &amp;
+                                Kurti </a></li>
+                            <li><a href="products.html">Dress
+                                Materials</a></li>
+                            <li><a href="products.html">Salwar Kameez
+                                Sets</a></li>
+                            <li><a href="products.html">Dress sale</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li><a href="">More</a></li>
                     <li><a href="">Sale</a></li>
                     <li><a href="">The Blog</a></li>
