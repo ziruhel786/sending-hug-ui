@@ -526,6 +526,7 @@ header {
     margin-top: 15px;
     margin-bottom: 5px;
     padding-right: 0 !important;
+    display: inline-block;
 }
 
 .search > input {
@@ -757,7 +758,7 @@ padding-top: 30px;
 }
 footer h5{
     font-weight: 700;
-    margin-top: 25px;
+    margin-top: 1.6em;
     letter-spacing: .05em;
 }
 .footer-nav li a,
@@ -1538,15 +1539,23 @@ textarea.form-control {
     padding-right: 0;
     padding-left: 0;
 }
+.btn-menu{
+    font-size: 17px;
+}
 @media (max-width: 1200px){
     body {
         letter-spacing: .12em;
     }
-    .navbar-nav li a, .footer-nav li a,
-    .top-header{
-        font-size: 11px;
+    .banner-carousel .carousel-inner {
+        height: 400px;
+        min-height: 400px;
     }
     .navbar-nav li a, .footer-nav li a,
+    .top-header,
+    .btn-sh, .copyright{
+        font-size: 11px;
+    }
+    .navbar-nav li a,
     .top-nav > ul > li{
         padding-left: 10px;
         padding-right: 10px;
@@ -1560,14 +1569,66 @@ textarea.form-control {
     .logo > img {
         height: 90px;
     }
+    .flex-row .content h2, .btn-wrap h2, .best-seller h2 {
+        font-size: 24px;
+    }
+    .quote h4, .slider .col h6 {
+        font-size: 14px;
+    }
+    .quote h3,
+    .social-nav li a{
+        font-size: 18px;
+    }
+    .slider .col {
+        width: 300px;
+    }
+    h3, .h3 {
+        font-size: 20px;
+    }
+    body, .form-control,
+    .sing-up > .btn-sh, .btn-sh.btn-apply{
+        font-size: 12px;
+    }
+    .search.sing-up > button {
+        height: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .search.sing-up > input {
+        height: 40px;
+        min-width: 240px;
+    }
 }
 @media (max-width: 970px){
 .navbar-nav li a{
     padding-left: 5px;
     padding-right: 5px;
 }
+    .banner-carousel .carousel-inner {
+        height: 350px;
+        min-height: 350px;
+    }
+    .flex-row .content h2, .btn-wrap h2, .best-seller h2 {
+        font-size: 20px;
+    }
+    .slider .col {
+        width: 275px;
+    }
+    .slider .col h6, footer h5{
+        font-size: 12px;
+    }
 }
 @media (max-width: 768px){
+    .slider .col h6{
+        padding: 0;
+    }
+    .slider .col {
+        width: 225px;
+    }
+    .banner-carousel .carousel-inner {
+        height: 300px;
+        min-height: 300px;
+    }
     #search {
         position: absolute !important;
         width: 100%;
@@ -1625,9 +1686,53 @@ textarea.form-control {
     .open .arrow:after {
         content: '\2013';
     }
+    .flex-row .content h2,
+    .btn-wrap h2,
+    .best-seller h2,
+    .quote h3,
+    .social-nav li a,
+    h3, .h3{
+        font-size: 16px;
+    }
+    .quote h4 {
+        font-size: 12px;
+    }
+    .slider .col h6,
+    .sing-up > .btn-sh, .btn-sh.btn-apply,
+    body{
+        font-size: 11px;
+    }
+    .btn-sh {
+        font-size: 10px;
+        min-width: 150px;
+        border-width: 1px;
+        letter-spacing: .1em;
+    }
+    .social-nav, .subscribe{
+        text-align: center;
+    }
+    .copyright{
+        font-size: 10px;
+    }
 
 }
 @media (max-width: 500px){
+    .social-nav li a{
+        font-size: 14px;
+    }
+    .col-xxs-6{
+        width: 50%;
+    }
+    .col-xxs-12{
+        width: 100%;
+    }
+    .slider .col {
+        width: 200px;
+    }
+    .banner-carousel .carousel-inner {
+        height: 200px;
+        min-height: 200px;
+    }
     .hidden-xxs{
         display: none !important;
     }
