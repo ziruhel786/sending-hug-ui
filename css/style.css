@@ -1083,7 +1083,7 @@ input[type="number"] {
     min-height: 43px;
     background-color: #CAAC57;
     color: #fff;
-    line-height: 26px;
+    line-height: 20px;
 }
 .availability h6 span {
     background-color: #CAAC57;
@@ -1556,6 +1556,17 @@ textarea.form-control {
     background-color: #f5f5f5;
 }
 @media (max-width: 1200px){
+    .xzoom {
+        width: calc(100% - 80px) !important;
+    }
+    .xzoom-thumbs {
+        width: 80px;
+        padding-right: 5px;
+    }
+    .xzoom-gallery{
+        margin-left: 0;
+    }
+
     body {
         letter-spacing: .12em;
     }
@@ -1599,6 +1610,9 @@ textarea.form-control {
     h3, .h3 {
         font-size: 20px;
     }
+    .sp-input input{
+        font-size: 16px;
+    }
     body, .form-control,
     .sing-up > .btn-sh, .btn-sh.btn-apply{
         font-size: 12px;
@@ -1611,6 +1625,14 @@ textarea.form-control {
     .search.sing-up > input {
         height: 40px;
         min-width: 240px;
+    }
+    #hero-arrow {
+        bottom: 30px;
+        right: 30px;
+        font-size: 24px;
+        height: 50px;
+        width: 50px;
+        line-height: 45px;
     }
 }
 @media (max-width: 970px){
