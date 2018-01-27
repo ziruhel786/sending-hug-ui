@@ -1521,9 +1521,9 @@ button.close{
     font-weight: 400;
     margin-bottom: 45px;
 }
-.main-container .form-control{
+/*.main-container .form-control{
     height: 30px;
-}
+}*/
 textarea.form-control {
     height: auto !important;
 }
@@ -1564,6 +1564,10 @@ textarea.form-control {
 }
 .item-quantity{
     position: relative;
+}
+.tab-container > h4{
+    padding-left: 15px;
+    font-weight: 600;
 }
 @media (max-width: 1200px){
     .xzoom {
@@ -1610,7 +1614,8 @@ textarea.form-control {
         font-size: 24px;
     }
     .quote h4, .slider .col h6,
-    .cart-header{
+    .cart-header,
+    .checkout-nav li::before{
         font-size: 14px;
     }
     .quote h3,
@@ -1633,7 +1638,8 @@ textarea.form-control {
     .sing-up > .btn-sh, .btn-sh.btn-apply,
     .support-box,
     .dropdown-menu,
-    h5, .h5{
+    h5, .h5,
+    .account-nav > li > a{
         font-size: 12px;
     }
     .search.sing-up > button {
@@ -1675,6 +1681,12 @@ textarea.form-control {
         padding-left: 15px;
         padding-right: 15px;
     }
+    .tab-container {
+        width: 160px;
+    }
+    .main-container {
+        width: calc(100% - 160px);
+    }
 }
 @media (max-width: 970px){
 .navbar-nav:not(.filter-nav) li a{
@@ -1696,6 +1708,18 @@ textarea.form-control {
     }
 }
 @media (max-width: 768px){
+    .tab-container {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .main-container {
+        width: 100%;
+        padding: 15px;
+    }
+    .account-nav > li{
+        display: inline-block;
+    }
     .item-table > .table > tbody > tr > td {
         white-space: normal;
     }
@@ -1802,14 +1826,16 @@ textarea.form-control {
     .login-container h4{
         font-size: 14px;
     }
-    .quote h4 {
+    .quote h4,
+    .checkout-nav li::before{
         font-size: 12px;
     }
     .slider .col h6,
     .sing-up > .btn-sh, .btn-sh.btn-apply,
     body,
     .sh-breadcrumb li a,
-    .support-box{
+    .support-box,
+    .account-nav > li > a{
         font-size: 11px;
     }
     .btn-sh {
@@ -1839,9 +1865,19 @@ textarea.form-control {
     .login-container h2{
         font-size: 20px;
     }
+    .main-container .login-container{
+        margin: 0 auto;
+        margin-bottom: 45px;
+    }
+    .text-center-xs{
+        text-align: center;
+    }
 
 }
 @media (max-width: 550px){
+    .main-container {
+        padding: 15px 0;
+    }
     .md-modal{
         min-width: 320px;
     }
@@ -1855,6 +1891,9 @@ textarea.form-control {
     }
 }
 @media (max-width: 500px){
+    .account-nav > li > a{
+        padding: 10px 5px;
+    }
     .item-table .item-quantity,
     .item-table .item-description,
     .item-table .item-list-price{
