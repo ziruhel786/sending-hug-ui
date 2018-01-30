@@ -645,6 +645,13 @@ section.top{
     padding-left: 15px;
     padding-right: 15px;
 }
+.flex-row .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .banner .flex-row .content{
     padding: 40px 30px 55px 55px;
 }
@@ -1568,6 +1575,48 @@ textarea.form-control {
 .tab-container > h4{
     padding-left: 15px;
     font-weight: 600;
+}
+/* Loader */
+.css-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.95);
+}
+.loader {
+    animation: load 1s linear infinite;
+    border: .5em dashed #555;
+    border-radius: 50%;
+    display: block;
+    height: 4em;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 4em;
+}
+.loader:after {
+    border: .9em solid #CAAC57;
+    border-radius: 50%;
+    bottom: .25em;
+    content: '';
+    left: .25em;
+    position: absolute;
+    right: .25em;
+    top: .25em;
+}
+@keyframes load {
+    100% { transform: rotate(360deg); }
+}
+/*end Loader */
+.no-product{
+    padding: 4em 15px;
+}
+.no-product > i{
+    font-size: 6em !important;
 }
 @media (max-width: 1200px){
     .xzoom {
